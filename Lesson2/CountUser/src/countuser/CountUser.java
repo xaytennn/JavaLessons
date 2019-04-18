@@ -19,7 +19,7 @@ public class CountUser {
       System.out.println("tmp3 index = " + tmp3.getId());
       Teacher boris = new Teacher("Boris", "Bochkarev", "Vladislav");
       boris.sayMeASecret();
-      System.out.println(boris.name +" " + boris.secondName 
+      System.out.println(boris.name + " " + boris.secondName 
               + " Index = " + boris.getId());
     }
     
