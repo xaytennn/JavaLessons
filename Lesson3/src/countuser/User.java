@@ -3,7 +3,6 @@ package countuser;
 import java.util.logging.*;
 
 
-
 /**
  *  class User
  *  @author Vladislav Sviridov <vladsviridov2203@gmail.com>
