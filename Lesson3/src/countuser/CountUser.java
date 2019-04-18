@@ -1,5 +1,5 @@
 package countuser;
-import java.util.Scanner;
+
 /**
  *  class CountUser
  *  @author Vladislav Sviridov <vladsviridov2203@gmail.com>
@@ -12,18 +12,16 @@ public class CountUser {
         User tmp2 = new User();
         User tmp3 = new User();
         Student vlad = new Student("Vladislav", "Sviridov", 3);
-        System.out.println(vlad.name +" " + vlad.secondName + " Course = " +
-                vlad.course + " Index = " + vlad.getId());
-
-        if(vlad.course != 4) User.logMessages();//Test log
+        User.logMessages(vlad.name +" " + vlad.secondName + " Course = " +
+                vlad.course + " Index = " + vlad.getId());//Test log
 
         Student roman = new Student("Roman", "Timofeev", 3);
-        System.out.println(roman.name +" " + roman.secondName + " Course = " +
+        User.logMessages(roman.name +" " + roman.secondName + " Course = " +
                 roman.course + " Index = " + roman.getId());
-        System.out.println("tmp3 index = " + tmp3.getId());
+        User.logMessages("tmp3 index = " + tmp3.getId());
         Teacher boris = new Teacher("Boris", "Bochkarev", "Vladislav");
         boris.sayMeASecret();
-        System.out.println(boris.name + " " + boris.secondName
+        User.logMessages(boris.name + " " + boris.secondName
                 + " Index = " + boris.getId());
     }
 

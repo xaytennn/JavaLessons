@@ -13,7 +13,7 @@ public class Teacher extends User {
      *  Print the text
      */
     void sayMeASecret(){
-        System.out.println("My favorite student is " + favorite + "! <3");
+        User.logMessages("My favorite student is " + favorite + "! <3");
     }
 
     /**

@@ -1,6 +1,6 @@
 package countuser;
 
-import java.util.logging.Logger;
+import java.util.logging.*;
 
 
 
@@ -57,13 +57,7 @@ public class User {
     /**
      * Log information
      */
-    public static void logMessages() {
-        log.finest("Finest Log");
-        log.finer("Finer Log");
-        log.fine("Fine Log");
-        log.config("Config Log");
-        log.info("Info Log");
-        log.warning("Warning Log");
-        log.severe("Severe Log");
+    public static void logMessages(String str){
+        log.info(str);
     }
 }
